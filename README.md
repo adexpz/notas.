@@ -12,16 +12,27 @@ nota2 = Convert.ToDecimal(Console.ReadLine());
 
 media = (nota1 + nota2) / 2;
 
-if (media >= 60) 
+if (media >= 60)
 {
     Console.WriteLine("parabens " + nome + ", voce nao fez mais que a obrigação");
 
 }
+
 else
 {
-    Console.WriteLine("voce e um merda " + nome);
+    decimal notadarecuperação;
 
+    Console.WriteLine("digite a nota da recuperação:");
+    notadarecuperação = Convert.ToDecimal(Console.ReadLine());
 
+    if (notadarecuperação >= 50)
+    {
+        Console.WriteLine("parabens, " + nome + ", voce foi aprovado");
+    }
+
+    else
+    {
+        Console.WriteLine("voce foi reprovado");
+
+    }
 }
-
-
